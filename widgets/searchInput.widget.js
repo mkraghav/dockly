@@ -92,7 +92,7 @@ class myWidget extends baseWidget(EventEmitter) {
       focused: false,
       border: 'line',
       style: {
-        bg: 'yellow',
+        bg: 'Ivory',
         fg: 'black'
       },
       align: 'left',
