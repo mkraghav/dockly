@@ -21,13 +21,15 @@ if (cliOptions.version) {
   cli.showVersion()
   process.exit(0)
 }
-
+/*Program exits successfully if any valid version satisfies
+all supplied ranges, and prints all satisfying versions*/
 if (semver.lt(process.version, nodeVersion.minimum)) {
   cli.showUsage()
+  /*If no satisfying versions are found, then exits failure*/
   console.log(chalk.red('unsupported node version, please use a version equal or greater than ' + nodeVersion.minimum))
   process.exit(0)
 }
-
+/*intialize Docker connection*/
 initDockerConnection()
   .then(initScreens)
   .then(function (screen) {
