@@ -40,10 +40,10 @@ class myWidget extends baseWidget(EventEmitter) {
         type: 'line'
       },
       hover: {
-        bg: 'blue'
+        bg: 'yellow'
       },
       scrollbar: {
-        fg: 'blue',
+        fg: 'pink',
         ch: '|'
       },
       align: 'left',
